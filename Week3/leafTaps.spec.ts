@@ -3,19 +3,14 @@ import { test } from "@playwright/test";
 
 test(`Learn CSS Selectors`, async ({ page }) => {
 
-
     await page.goto(`https://leaftaps.com/opentaps/control/main`);
-
 
     //await page.locator('[id="username"]').fill("democsr2"); Here [id="username"] === #username// 
     //await page.locator('#username').fill("democsr2"); // OPtion2
 
-
    // await page.locator('[class="inputLogin"]').nth(0).fill("democsr2"); // OPtion3
 
-
-    await page.locator('[class="inputLogin"]').first().fill("democsr2"); // OPtion4    
-
+    await page.locator('[class="inputLogin"]').first().fill("democsr2"); // OPtion4
 
     // await page.locator(`[id="password"]`).fill("crmsfa");
     // await page.locator('#password').fill("crmsfa"); // Option 2
